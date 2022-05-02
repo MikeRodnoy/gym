@@ -1,0 +1,124 @@
+.container--school {
+  position: relative;
+  @media screen and (min-width:768px) and (max-width:1920px) {
+    display: flex;
+    margin-bottom: 57px;
+  }
+
+  @media screen and (min-width:1920px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.school-img-thumb {
+  position: relative;
+  @media screen and (max-width:768px) {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-school-img {
+  display: none;
+  @media screen and (max-width:767px) {
+    display: block;
+  }
+}
+
+.main-school-img-tablet{
+  display: none;
+  @media screen and (min-width:768px) {
+    display: block;
+  }
+
+  @media screen and (min-width:1920px) {
+    display: block;
+    width: 650px;
+    height: 800px;
+  }
+}
+
+.second-school-img {
+  position: absolute;
+  top: 180px;
+  left: 150px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  @media screen and (min-width:768px) and (max-width:1920px) {
+    transform: scaleX(-1);
+    top: 373px;
+    left: 147px;
+  }
+
+  @media screen and (min-width:1920px) {
+    width: 384px;
+    height: 384px;
+    top: 511px;
+    left: 257px;
+  }
+}
+
+.tablet-school-thumb {
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width:1920px) {
+    margin-left:120px;
+  }
+}
+
+.school--tablet {
+  display: none;
+  @media screen and (min-width:768px) {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 72px;
+  }
+}
+
+.school--mobile {
+  display: none;
+  @media screen and (max-width:767px) {
+    display: block;
+  }
+}
+
+.school__text {
+  font-size: 14px;
+  line-height: 1.7;
+  
+  @media screen and (max-width: 767px) {
+    height: 144px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1920px) {
+    height:297px;
+    width:357px;
+    font-size: 16px;
+    margin: 40px 0;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width:1920px) {
+    margin: 60px 00 80px 0;
+    font-size: 18px;
+  }
+}

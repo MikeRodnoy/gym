@@ -1,0 +1,193 @@
+.container--header {
+  display: block;
+  padding-top: 20px;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width:1920px) {
+    display: flex;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+}
+
+.logo-thumb {
+  @media screen and (max-width:767px) {
+  width: 48px;
+  height: 48px;    
+  }
+
+  @media screen and (min-width:768px) {
+  width: 110px;
+  height: 110px;    
+  }
+}
+
+.mobile-thumb {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-address-thumb {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width:768px) {
+    margin-top: 20px;
+  }
+}
+
+.geolocation {
+  position: relative;
+  @media screen and (max-width:767px) {
+    width: 100%;
+    margin-left: 11px;
+  }
+  
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 115px;
+  }
+
+  @media screen and (min-width:1920px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 238px 0 358px;
+  }
+}
+
+.geolocation__link {
+  color: white;
+  font-size: 13px;
+  line-height: 1.2;
+
+  @media screen and (min-width:1920px) {
+    font-size: 16px;
+    line-height: 1.5;
+    }
+}
+
+.geolocation__link--svg {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 5px;
+    display: inline-block;
+    background-image: url(../../images/geolocation.svg);
+    z-index: 2;
+    background-size: cover;
+  }
+
+    @media screen and (max-width:767px) {
+    &::before {
+    width: 20px;
+    height: 20px;
+    left: -27px;
+    top: 19px
+    }
+  }
+
+    @media screen and (min-width:768px) {
+    &::before {
+    width: 25px;
+    height: 25px;
+    }
+  }
+}
+
+
+.telephone-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.number-header {
+  display: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  @media screen and (min-width:1920px) {
+    font-size: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 5px;
+    display: inline-block;
+    background-image: url(../../images/telephone.svg);
+    background-size: cover;
+  }
+  @media screen and (max-width:767px) {
+    &::before {
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 8px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    display: block;
+    &::before {
+    width: 25px;
+    height: 25px;
+    }
+  }
+}
+
+.number-discription {
+  display: none;
+  color: white;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-left: auto;
+  @media screen and (min-width:768px) {
+    display: block;
+  }
+
+  @media screen and (min-width:1920px) {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.tel-header-thumb{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width:767px) {
+    margin-left: auto;
+  }
+}
+
+.number-header-mobile{
+  display: none;
+  @media screen and (max-width:767px) {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  }
+}
+
+.number-discription-mobile {
+  display: none;
+  @media screen and (max-width:767px) {
+  display: block;
+  color: white;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-left: auto;
+  }
+}
